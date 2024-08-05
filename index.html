@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS DOM Practice</title>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- Task 1 -->
+  <!-- Style the Paragraph text through javascript -->
+  <p id="text"> JavaScript DOM Practice - bySajani</p>
+  <h4 id="text1">Today is August 2 - Day 2 of learning JS</h4>
+
+  <button id="jsstyle" onclick="js_style()">JS Style</button>
+
+
+  <!-- Task 2 -->
+  <!-- Return First and Last Name from a form -->
+  <form id="form1" onsubmit="getFormValue()">
+    First name: <input type="text" name="fname" value="Sajani"> <br />
+    Last name: <input type="text" name="lname" value="Dhimal"> <br />
+    <input type="submit" value="Submit">
+
+  </form>
+
+  <!-- Task 3 -->
+  <!-- Click to set paragraph background color -->
+  <div>
+    <input type="button" value="Set BGColor" onclick="set_background()">
+    <p> Learning how to set paragraph background Color through JavaScript.</p>
+    <p> Lets go girl! Hustle for this one month and you will get through everything i n your life.</p>
+  </div>
+
+  <!-- Task 4 -->
+  <!-- Collect the value of href, hreflang, rel, target, and type attributes of a link -->
+
+  <div>
+    <p> <a id="svk" type="text/html" hreflang="en-us" rel="nofollow" target="_self"
+        href="https://www.github.com/">Github</a></p>
+    <button onclick="getAttributes()">Click here to get attributes value</button>
+  </div>
+
+  <!-- Task 5 -->
+  <!-- JavaScript function to add rows to a table -->
+  <table id="table1" border="1">
+    <tr>
+      <td>Fname</td>
+      <td>Lname</td>
+    </tr>
+    <tr>
+      <td>Sajani</td>
+      <td>Dhimal</td>
+    </tr>
+    <tr>
+      <td>Hobby</td>
+      <td>Ride</td>
+    </tr>
+
+  </table> <br />
+
+  <input type="button" onclick="insert_Row()" value="Insert Row">
+<br/>
+
+  <!-- Task 6 -->
+  <!-- Create a function to update the content of a specific cell of a table -->
+  <input type="button" onclick="changeContent()" value="Change Content">
+<br/>
+
+  <!-- Task 7 -->
+  <!-- Create a user defined table, accepting rows and columns -->
+  <table id="table2" border="1">
+  </table>
+  <form>
+    <input type="button" onclick="createTable()" value="Create the table">
+  </form>
+<br/>
+
+  <!-- Task 8 -->
+  <!-- Remove items from a dropdown list -->
+  <select id="colorSelect">
+    <option>Red</option>
+    <option>Green</option>
+    <option>White</option>
+    <option>Black</option>
+  </select>
+  <input type="button" onclick="removecolor()" value="Select and Remove">
+<br/>
+
+  <!-- Tassk 9 -->
+  <!-- Count and display the items of a dropdown list, in an alert window -->
+  <form>
+    Select your Favorite Color :
+    <select id="mySelect">
+      <option>Red</option>
+      <option>Green</option>
+      <option>White</option>
+      <option>Black</option>
+    </select>
+
+    <input type="button" onclick="getOptions()" value="Count and Output all items">
+  </form>
+
+  <br/>
+
+</body>
+
+</html>
